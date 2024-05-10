@@ -38,3 +38,11 @@ def integrate_callbacks(app, app_pathname):
     )
     def render_content(value):
         return [value]
+
+    @app.callback(
+        Output("drawer-simple", "opened"),
+        Input("drawer-demo-button", "n_clicks"),
+        prevent_initial_call=True,
+    )
+    def drawer_demo(n_clicks):
+        return True

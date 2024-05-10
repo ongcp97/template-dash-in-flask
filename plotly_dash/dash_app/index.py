@@ -1,6 +1,7 @@
 from dash import dcc, html, Output, Input, State
 import dash_mantine_components as dmc
 
+
 def create_layout():
     layout = dmc.MantineProvider(
         forceColorScheme="light",
